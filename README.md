@@ -12,9 +12,7 @@ This plot visualises speed comparison against lap distance for Verstappen and Pi
 This plot, an overlay of throttle and brake application across each driver's fastest lap, visualises the differences in braking application timing, brake release and throttle application. Several braking zones show minor differences between the drivers' braking application, while the throttle traces reveal differences in the speed at which each driver returns to full throttle from corner entry.
 This analysis does not attempt to compare braking force, as the brake channel of FastF1 is a binary application signal, rather than a brake-pressure measurement.
 #
-**In conclusion**, this comparison between Verstappen and Piastri's fastest laps during the 2024 Bahrain Qualifying demonstrates how telemetry at lap-level can be used to localise performance differences that hide behind lap time alone. The speed, throttle and brake traces identify where driver approach differs, providing a basis for more detailed inverstigation of braking poiunts, corner-exit, speed-development and, ultimately, performance.
-
-Overall, the visualised data illustrates Piastri's slightly more conservative driving style, trading pace for a more controlled lap. Despite both drivers' fastest laps being closely matched overall, this project uncovered the subtle variations in Verstappen and Piastri's .
+**In conclusion**, this comparison between Verstappen and Piastri's fastest laps during the 2024 Bahrain Qualifying demonstrates how telemetry at lap-level can be used to localise performance differences that hide behind lap time alone. The speed, throttle and brake traces identify where driver approach differs, providing a basis for more detailed investigation of braking points, corner-exit, speed-development and, ultimately, performance.
 #
 #### Future Adaptations
 - Use a common interpolated distance axis to more precisely quantify differences 
