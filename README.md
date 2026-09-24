@@ -5,14 +5,19 @@ With the aim to develop abilities in **motorsport data analysis and visualisatio
 This project compares the fastest laps of **Max Verstappen**🔵 and **Oscar Piastri**🟠 during the **2024 Bahrain Grand Prix Qualifying Session**, using the *FastF1 Python Library*.
 #
 #### Plot 1 - Speed Comparison
-This plot visualises the speed comparison across each driver's fastest lap, revealing differences in braking efficiency, acceleration out of corners, and driving consistency. Visualising the data collected across these laps offers insight into potential setup variations and overall driving style. The plot shows Verstappen reaches higher terminal speeds during the main straight of his fastest lap, suggesting McLaren's setup compromise favouring cornering over straight-line speed.
+This plot visualises speed comparison against lap distance for Verstappen and Piastri's fatsers qualifying laps, revealing differences in straight-line speed, minimum corner speed and acceleration profile. The traces show that Verstappen most notably exceeds Piastri's speed on the opening straight, compared to marginal differences between the two traces for other sectors. This indicates where performance differs around the circuit. Overall analysis cannot be attributed to the speed trace in isolation; factors such as corner exit performance, vehicle set-up, energy depolyoment and driver input must also be considered.
+
 #
 #### Plot 2 - Throttle and Brake Comparison
-This plot, an overlay of throttle and brake application across the drivers' fastest laps, visualises the differences in braking points and throttle commitment. The overlay highlights Piastri's slightly earlier braking and more cautious throttle modulation, compared to Verstappen's. Whilst Piastri's traces get progressively smoother, demonstrating a careful and controlled approach, Verstappen's consistently smooth traces indicate confidence and experience with the car.
+This plot, an overlay of throttle and brake application across each driver's fastest lap, visualises the differences in braking application timing, brake release and throttle application. Several braking zones show minor differences between the drivers' braking application, while the throttle traces reveal differences in the speed at which each driver returns to full throttle from corner entry.
+This analysis does not attempt to compare braking force, as the brake channel of FastF1 is a binary application signal, rather than a brake-pressure measurement.
 #
-**In conclusion**, Verstappen demonstrates less hesitation, with slightly later and harder braking into major corners, whilst Piastri brakes earlier and with smoother modulation. Overall, the visualised data illustrates Piastri's slightly more conservative driving style, trading pace for a more controlled lap. Despite both drivers' fastest laps being closely matched overall, this project uncovered the subtle variations in Verstappen and Piastri's confidence and driving style.
+**In conclusion**, this comparison between Verstappen and Piastri's fastest laps during the 2024 Bahrain Qualifying demonstrates how telemetry at lap-level can be used to localise performance differences that hide behind lap time alone. The speed, throttle and brake traces identify where driver approach differs, providing a basis for more detailed inverstigation of braking poiunts, corner-exit, speed-development and, ultimately, performance.
+
+Overall, the visualised data illustrates Piastri's slightly more conservative driving style, trading pace for a more controlled lap. Despite both drivers' fastest laps being closely matched overall, this project uncovered the subtle variations in Verstappen and Piastri's .
 #
 #### Future Adaptations
+- Use a common interpolated distance axis to more precisely quantify differences 
 - Expand comparison to multiple laps (not solely the drivers' fastest laps)
 - Integrate tyre/weather data for further data analysis
 - Compare a greater number of drivers
